@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A11111</color>
+    <color name="colorPrimaryDark">#7D0000</color>
+    <color name="colorAccent">#B40000</color>
+
+    <color name="colorPrimaryBlue">#293ce4</color>
+    <color name="colorPrimaryDarkBlue">#103991</color>
+    <color name="colorAccentBlue">#7979f4</color>
+
+    <color name="colorPrimaryGreen">#129f10</color>
+    <color name="colorPrimaryDarkGreen">#04811f</color>
+    <color name="colorAccentGreen">#79f47b</color>
+
+    <color name="colorPrimaryYellow">#f2e600</color>
+    <color name="colorPrimaryDarkYellow">#d9c700</color>
+    <color name="colorAccentYellow">#f4ea79</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorIcons">#757575</color>
+    <color name="colorLightGray">#BBBBBB</color>
+    <color name="colorIconsTab">#E19999</color>
+    <color name="colorGreen">#007E08</color>
+
+
+    <color name="picker1">#933DA9</color>
+    <color name="picker2">#546CA9</color>
+    <color name="picker3">#2FA9E4</color>
+    <color name="picker4">#F37047</color>
+    <color name="picker5">#217F4E</color>
+    <color name="picker6">#4CB684</color>
+    <color name="picker7">#E59089</color>
+    <color name="picker8">#D42A2A</color>
+    <color name="picker9">#636363</color>
+    <color name="picker10">#8490C8</color>
+    <color name="picker11">#F5C84E</color>
+
+    <color name="selected_filter">#221f20</color>
+    <color name="normal_filter">#8a8889</color>
+    <color name="cardview_background_color">#333639</color>
+</resources>

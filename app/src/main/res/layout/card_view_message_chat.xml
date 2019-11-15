@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_Message_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardElevation="0dp">
+
+        <!-- OnlyReceiver  layouts -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Profile picture -->
+            <LinearLayout
+                android:id="@+id/linearLayout_pic_user2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circular_user_chat2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/userpic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!-- Message -->
+            <LinearLayout
+                android:id="@+id/Relative_message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_message_chat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_message"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_message_chat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:maxWidth="250dp"
+                        android:text="hi" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_hour_message2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/divider_hour_chat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/colorLightGray" />
+
+
+                        <TextView
+                            android:id="@+id/text_hour_chat2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="end"
+                            android:text="24:59 pm"
+                            android:textColor="@color/colorLightGray"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Audio -->
+            <LinearLayout
+                android:id="@+id/linearLayout_audio_message1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone">
+
+
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_message"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_play_message1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:background="?android:attr/selectableItemBackground"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_stop_message1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_pause_black_24dp"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone"/>
+
+                    <SeekBar
+                        android:id="@+id/progress_audio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Image -->
+            <LinearLayout
+                android:id="@+id/linearLayout_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/btn_show_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver imagen"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorIcons"
+                        android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+                        android:drawableTint="@color/colorIcons"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- File -->
+            <LinearLayout
+                android:id="@+id/linearLayout_file1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:id="@+id/textView_name_file1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name of the file"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView_icon_file1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/pdf"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_download_file_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargar archivo"
+                        android:drawableEnd="@drawable/ic_file_download_black_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Contact -->
+            <LinearLayout
+                android:id="@+id/linearLayout_contact1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp">
+
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/contact"
+                            android:layout_gravity="center"/>
+
+
+                        <TextView
+                            android:id="@+id/textView_number_contact1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3183937467"/>
+
+                        <TextView
+                            android:id="@+id/textView_name_contact1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Jair Jimenez Munevar"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_add_contact1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Agregar"
+                                android:drawableEnd="@drawable/ic_add_black_24dp"
+                                android:drawableTint="@color/colorBlack"/>
+
+                            <Button
+                                android:id="@+id/btn_call_contact1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Llamar"
+                                android:drawableEnd="@drawable/ic_call_black_24dp"
+                                android:drawableTint="@color/colorBlack"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Only emisor layouts -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <!-- Message -->
+            <LinearLayout
+                android:id="@+id/Relative_message1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="end"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_message_chat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_message"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_message_chat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="end"
+                        android:maxWidth="250dp"
+                        android:text="Ho" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_hour_message1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end"
+                        android:visibility="gone">
+
+                        <View
+                            android:id="@+id/divider_hour_chat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/colorLightGray" />
+
+
+                        <TextView
+                            android:id="@+id/text_hour_chat1"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="24:59 pm"
+                            android:textColor="@color/colorLightGray"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- Audio -->
+            <LinearLayout
+                android:id="@+id/linearLayout_audio_message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="end"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_message"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_play_message2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_play_arrow_black_24dp"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:background="?android:attr/selectableItemBackground"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_stop_message2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_pause_black_24dp"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:visibility="gone"/>
+
+                    <SeekBar
+                        android:id="@+id/progress_audio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="100"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Image -->
+            <LinearLayout
+                android:id="@+id/linearLayout_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_show_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver imagen"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorIcons"
+                    android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+                    android:drawableTint="@color/colorIcons"/>
+
+
+            </LinearLayout>
+
+            <!-- file -->
+            <LinearLayout
+                android:id="@+id/linearLayout_file2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:id="@+id/textView_name_file2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name of the file"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView_icon_file2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/pdf"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver"
+                        android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
+                        android:drawableTint="@color/colorBlack"/>
+
+                    <Button
+                        android:id="@+id/btn_download_file_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descargar archivo"
+                        android:drawableEnd="@drawable/ic_file_download_black_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Contact -->
+            <LinearLayout
+                android:id="@+id/linearLayout_contact2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/contact"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/textView_number_contact2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3183937467"/>
+
+                        <TextView
+                            android:id="@+id/textView_name_contact2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Jair Jimenez Munevar"/>
+
+                        <Button
+                            android:id="@+id/btn_call_contact2"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:text="Llamar"
+                            android:drawableEnd="@drawable/ic_call_black_24dp"
+                            android:drawableTint="@color/colorGreen"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Profile Picture -->
+            <LinearLayout
+                android:id="@+id/linearLayout_pic_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circular_user_chat1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/userpic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+
+
+
+

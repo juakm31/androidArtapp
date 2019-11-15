@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_Publication_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_publication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/publication"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/publication"/>
+
+                    <TextView
+                        android:id="@+id/text_autor_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lelia Colo"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Necesariamente si el graffiti y el arte urbano (yo pienso que el arte en sí) es un acto comunicativo, y más allá puede constituirse en activismo comunicativo, pensemos en qué comunicar, en cómo oponer otras narraciones distintas a las que nos meten por los ojos y los oídos desde la ideología dominante cada día y a todas horas. En ejercer un pensamiento crítico sobre nuestro entorno urbano. Porque si hay algo que le debemos pedir al arte urbano (y al arte en general) es que sea un arte a la contra."/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

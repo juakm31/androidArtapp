@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">ARTAPP</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="do_not_sign_out">Do not sign out</string>
+    <string name="jcv_systemas_information">JCV SYSTEMAS, INFORMATION</string>
+    <string name="jcv_systemas">JCV SYSTEMAS</string>
+    <string name="title_activity_tabs">tabs</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="groups">Groups</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="attributes_search">Name, Lastname, Id</string>
+    <string name="search">Search</string>
+    <string name="name_group">Name\'s Group</string>
+    <string name="color">Color</string>
+    <string name="new_participants">New Participants</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="title_color_picker">Choose the color</string>
+    <string name="contact">Contact</string>
+    <string name="file">File</string>
+    <string name="image">Image</string>
+    <string name="title_activity_settings_chat">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="pref_lang_values">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="pref_lang_titles">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Default</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="choose_ringtone">Choose notification ringtone</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="write_message">Write your message</string>
+    <string name="language">Language</string>
+    <string name="chatSetting">User</string>
+    <string name="aparience">Apparience</string>
+    <string name="theme">Theme</string>
+    <string name="font_size">Font size</string>
+    <string name="change_the_theme">Change the theme of your app</string>
+    <string name="change_the_font_size">Change the size of the font</string>
+    <string name="change_the_language">Change the default language</string>
+    <string name="push_notifications">Push notifications</string>
+    <string name="notifications_on">Your notification ringtone</string>
+    <string name="notifications_off">Your notifications will be silenced</string>
+    <string name="choose_notification_ringtone">Choose notification sound</string>
+    <string name="notification_ringtone">Notification Ringtone</string>
+    <string name="your_session_saved">Your session will be saved</string>
+    <string name="your_session_lost">Your data will be lost after you close the app</string>
+    <string name="camera">Camera</string>
+    <string name="galeria">Gallery</string>
+
+    <string name="field_cant_empty">Field can not be empty</string>
+    <string name="username_too_long">Username too long</string>
+    <string name="group">Group</string>
+    <string name="message">Message</string>
+    <string name="picture">Picture</string>
+    <string name="subject_s_group">Subject\'s Group</string>
+    <string name="sign_off">Sign Off</string>
+    <string name="chat">Chat</string>
+    <string name="other">Other</string>
+    <string name="session">Session</string>
+    <string name="new_group">New Group</string>
+    <string name="background">Background</string>
+    <string name="changre_background">Change Background</string>
+    <string name="select_background_chat">You can select a background for this chat</string>
+    <string name="background_by_default">Your background will be by default</string>
+    <string name="select_origin_background">Select the origin of the background</string>
+    <string name="select_background">Select Background</string>
+    <string name="ver">Ver</string>
+    <string name="ver_imagen">ver Imagen</string>
+    <string name="descargar_archivo">Descargar archivo</string>
+    <string name="name">Name</string>
+    <string name="llamar">Llamar</string>
+    <string name="agregar">Agregar</string>
+    <string name="grabando">Grabando...</string>
+    <string name="verificando">Verificando...</string>
+    <string name="cargando">Cargando...</string>
+    <string name="te_envio_un_mensaje">te envio un nuevo mensaje</string>
+    <string name="about">About</string>
+    <string name="results">Results</string>
+    <string name="select">Select</string>
+    <string name="no_tienes_conversaciones">No tienes conversaciones</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="updating">Updating</string>
+    <string name="attach">Attached</string>
+    <string name="audio">Audio</string>
+    <string name="loading_audio">Loading Audio...</string>
+    <string name="failed_create_group">Failed creating the group, try it again</string>
+    <string name="group_created_successfull">Group created successfull</string>
+    <string name="failed">Failed</string>
+    <string name="successfull">Successfull</string>
+    <string name="at_leat_one_participant">At least you must add one participant</string>
+    <string name="participants">Participants</string>
+    <string name="sent">Sent</string>
+    <string name="message_not_sent">Message not sent, try again</string>
+    <string name="from">From</string>
+    <string name="choose_persons">Choose persons</string>
+    <string name="forward">Forward</string>
+    <string name="forwarded">Forwarded</string>
+    <string name="constraint">CONSTRAINT</string>
+    <string name="brightness">BRIGHTNESS</string>
+    <string name="saturation">SATURATION</string>
+    <string name="filter_name">FILTER NAME</string>
+    <string name="edit_picture">Edit Picture</string>
+    <string name="filters">Filters</string>
+    <string name="edit">Edit</string>
+    <string name="permission_denied">Permission denied!</string>
+    <string name="image_saved_to_gallery">Image saved to gallery!</string>
+    <string name="open">OPEN</string>
+    <string name="unable_to_save_image">Unable to save image</string>
+    <string name="brush">Brush</string>
+    <string name="brush_size">Brush Size</string>
+    <string name="opacity">Opacity</string>
+    <string name="eraser">Eraser</string>
+    <string name="emoji">Emoji</string>
+    <string name="text">Text</string>
+    <string name="enter_your_text">Enter your text</string>
+    <string name="done">Done</string>
+    <string name="demo_mayus">DEMO</string>
+    <string name="cortar">Cortar</string>
+    <string name="unexpected_error">Unexpected Error</string>
+    <string name="cannot_retrieve_crop_image">Cannot retrieve crop image</string>
+    <string name="image_saved_in_db">Image saved in DB</string>
+    <string name="created_by">Created by:</string>
+    <string name="open_the_chat_to_load_messages">Open the chat to load messages</string>
+    <string name="choose_group">Choose group</string>
+    <string name="add">add</string>
+    <string name="error_adding_user_to_groups">Error adding user to selected groups</string>
+    <string name="try_again">Try again</string>
+</resources>
